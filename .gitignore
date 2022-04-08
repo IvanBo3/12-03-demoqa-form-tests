@@ -41,3 +41,4 @@ target/
 /gradlew
 /gradlew.bat
 settings.gradle
+.DS_Store
