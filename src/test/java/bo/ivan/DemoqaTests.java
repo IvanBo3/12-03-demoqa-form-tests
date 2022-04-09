@@ -32,7 +32,7 @@ public class DemoqaTests {
 
     @BeforeAll
     static void configTest() {
-        Configuration.baseUrl = "https://demoqa.com/";
+        Configuration.baseUrl = "https://demoqa.com";
         /*
         чтобы была видна кнопка Submit на маленьком экране без уменьшения масштаба
         можно запустить тест с имитацией мобильного телефона,
@@ -44,7 +44,7 @@ public class DemoqaTests {
 
     @Test
     void formTest() {
-        Selenide.open("automation-practice-form");
+        Selenide.open("/automation-practice-form");
 //        Selenide.zoom(0.75);
 
         $("#firstName").setValue(firstName);
